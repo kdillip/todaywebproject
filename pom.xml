@@ -74,12 +74,12 @@
       <snapshotRepository>
         <id>nexus</id>
         <name>devops</name>
-	<url>http://15.207.115.87:8081/repository/novbatch/</url>
+	<url>http://65.0.105.194:8081/repository/dillip_snapshot/</url>
       </snapshotRepository>
       <repository>
         <id>nexus</id>
         <name>devops markonda</name>
-	<url>http://15.207.115.87:8081/repository/novbatch/</url>
+	<url>http://65.0.105.194:8081/repository/dillip_snapshot/</url>
       </repository>	
    </distributionManagement>
   
