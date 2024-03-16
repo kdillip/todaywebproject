@@ -74,12 +74,12 @@
       <snapshotRepository>
         <id>nexus</id>
         <name>devops</name>
-	<url>http://65.0.105.194:8081/repository/dillip_snapshot//url>
+	<url>http://65.0.105.19:8081/repository/dillip_snapshot//url>
       </snapshotRepository>
       <repository>
         <id>nexus</id>
         <name>devops</name>
-	<url>http://65.0.105.194:8081/repository/dillip_snapshot/</url>
+	<url>http://65.0.105.19:8081/repository/dillip_snapshot/</url>
       </repository>	
    </distributionManagement>
   
