@@ -1,13 +1,20 @@
+//MULTI STAGE PIPELINE AS A CODE: we can write multiple commands on multiple stage
+
 pipeline {
     agent any 
     
     stages {
-        stage("one1") {
+        stage("one") {
             steps {
                 sh 'touch file2'
                 sh 'lsmem'
                 sh 'lscpu'
-                sh 'ls -la'
+            }
+        }
+        stage("two") {
+            steps {
+                sh 'uname'
+                sh 'hostname -i'
             }
         }
     }
