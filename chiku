@@ -4,17 +4,24 @@ pipeline {
     agent any 
     
     stages {
-        stage("one") {
+        stage("checkout") {
             steps {
-                sh 'touch file2'
-                sh 'lsmem'
-                sh 'lscpu'
+                git 'https://github.com/RAHAMSHAIK007/jenkins-java-project.git'
             }
         }
-        stage("two") {
+        stage('build') {
             steps {
-                sh 'uname'
-                sh 'hostname -i'
+                sh 'mvn compile'
+            }
+        }
+        stage('test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage("artifact") {
+            steps {
+                sh 'mvn clean package'
             }
         }
     }
