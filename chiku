@@ -7,6 +7,7 @@ pipeline {
                 sh 'touch file2'
                 sh 'lsmem'
                 sh 'lscpu'
+                sh 'ls -la'
             }
         }
     }
