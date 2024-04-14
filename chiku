@@ -2,7 +2,7 @@ pipeline {
     agent any 
     
     stages {
-        stage("one") {
+        stage("one1") {
             steps {
                 sh 'touch file2'
                 sh 'lsmem'
